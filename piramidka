@@ -1,0 +1,63 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+int disk = 2;// к-во дисков
+int kernel = 3;// к-во стержней
+int pos[kernel-1][disk-1]; // позиция: номер стержня и диски на нем
+for (int i=0;i<disk;i++) //заполнили 0-ой стержень (первонач пирамидка)
+{
+  pos[0][i]=disk-i;
+}
+int end[kernel];// массив номеров последних элементов
+end[0]=disk-1;
+//void foo(int numb, end; int disk, kernel, pos){
+//numb - номер стержня с которого берем верхний диск
+//далее перемещаем диск на другой стержень
+  pos[numb][end[numb]]=0;
+  end[numb]--;
+for (int i;i<kernel;i++)
+{
+  if (i<>numb)
+  {
+    pos[i][end[i]]=pos[numb][end[numb]]
+    foo();
+  }
+
+}
+
+for (int i=0;i<disk;i++)
+{
+  cout << pos[0][i];
+}
+
+//}
+}
+
+
+
+
+disk = 2;# к-во дисков
+kernel = 3;# к-во стержней
+pos[kernel-1][disk-1]; #позиция: номер стержня и диски на нем
+for i in change(0,disk): #заполнили 0-ой стержень (первонач пирамидка)
+  pos[0][i]=disk-i;
+
+end[kernel];# массив номеров последних элементов
+end[0]=disk-1;
+#def foo( numb, end,disk, kernel, pos):
+#numb - номер стержня с которого берем верхний диск
+#далее перемещаем диск на другой стержень
+pos[numb][end[numb]]=0;
+end[numb]-=end[numb];
+for i in change(0,kernel):
+
+  if (i!=numb):
+    pos[i][end[i]]=pos[numb][end[numb]]
+    foo(i,end,disk)
+  
+
+
+for item1 item2 in pos:
+  print (pos[0][i])
+
